@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  font-synthesis: none;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #eef6fa;
+}
+
+::selection {
+  background: rgba(24, 166, 125, 0.22);
+  color: #071b3d;
+}
+
+.section-shell {
+  @apply mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8;
+}
+
+.glass-panel {
+  @apply border border-verdits-line bg-white/80 shadow-2xl shadow-sky-900/10 backdrop-blur-xl;
+}
+
+.premium-card {
+  @apply rounded-2xl border border-verdits-line bg-verdits-card shadow-xl shadow-sky-900/10 backdrop-blur;
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-verdits-navy via-verdits-ink to-verdits-teal bg-clip-text text-transparent;
+}
+
+.button-gradient {
+  @apply bg-brand-gradient text-white shadow-glow transition duration-300 hover:-translate-y-0.5 hover:scale-[1.02] hover:shadow-[0_18px_50px_rgba(7,27,61,0.22)];
+}
