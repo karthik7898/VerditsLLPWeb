@@ -11,19 +11,19 @@ export default function ContactForm() {
       <div className="grid gap-5 sm:grid-cols-2">
         {fields.map(([label, type]) => (
           <label key={label} className={label === 'Subject' ? 'sm:col-span-2' : ''}>
-            <span className="text-sm font-semibold text-slate-200">{label}</span>
+            <span className="text-sm font-semibold text-verdits-navy">{label}</span>
             <input
               type={type}
-              className="mt-2 w-full rounded-2xl border border-sky-100 bg-white px-4 py-3 text-verdits-navy outline-none transition placeholder:text-slate-400 focus:border-verdits-teal/70 focus:ring-4 focus:ring-verdits-teal/10"
+              className="mt-2 w-full rounded-2xl border border-verdits-line bg-white px-4 py-3 text-verdits-navy outline-none transition placeholder:text-stone-400 focus:border-verdits-teal focus:ring-4 focus:ring-verdits-teal/20"
               placeholder={label}
             />
           </label>
         ))}
         <label className="sm:col-span-2">
-          <span className="text-sm font-semibold text-slate-200">Message</span>
+          <span className="text-sm font-semibold text-verdits-navy">Message</span>
           <textarea
             rows="5"
-            className="mt-2 w-full resize-none rounded-2xl border border-sky-100 bg-white px-4 py-3 text-verdits-navy outline-none transition placeholder:text-slate-400 focus:border-verdits-teal/70 focus:ring-4 focus:ring-verdits-teal/10"
+            className="mt-2 w-full resize-none rounded-2xl border border-verdits-line bg-white px-4 py-3 text-verdits-navy outline-none transition placeholder:text-stone-400 focus:border-verdits-teal focus:ring-4 focus:ring-verdits-teal/20"
             placeholder="Tell us how VERDITS can help"
           />
         </label>

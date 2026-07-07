@@ -23,7 +23,7 @@ const audiences = [
 
 export default function PlatformCards() {
   return (
-    <section className="bg-verdits-section py-20 sm:py-24">
+    <section id="about" className="scroll-mt-28 bg-verdits-section py-20 sm:py-24">
       <div className="section-shell">
         <SectionTitle
           eyebrow="Choose your role"

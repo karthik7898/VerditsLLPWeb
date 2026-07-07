@@ -1,12 +1,11 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, BookOpen, CalendarCheck, Scale, ShieldCheck, Sparkles, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import BrandLogo from './BrandLogo.jsx';
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-dark-radial pt-36 sm:pt-40 lg:pt-44">
-      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-sky-200 to-transparent" />
+    <section id="home" className="relative scroll-mt-28 overflow-hidden bg-dark-radial pt-36 sm:pt-40 lg:pt-44">
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-verdits-teal to-transparent" />
       <div className="section-shell grid min-h-[720px] items-center gap-12 pb-20 lg:grid-cols-[1.05fr_0.95fr] lg:pb-28">
         <motion.div
           initial={{ opacity: 0, y: 26 }}
@@ -14,34 +13,31 @@ export default function Hero() {
           transition={{ duration: 0.7 }}
           className="max-w-4xl"
         >
-          <div className="mb-8 inline-flex rounded-lg bg-white px-4 py-3 shadow-sm ring-1 ring-verdits-line">
-            <BrandLogo className="h-12 sm:h-14" />
-          </div>
-          <div className="mb-6 flex w-fit items-center gap-2 rounded-full border border-verdits-line bg-white/80 px-4 py-2 text-sm font-medium text-verdits-text shadow-sm backdrop-blur">
+          <div className="mb-6 flex w-fit items-center gap-2 rounded-full border border-verdits-line bg-white/85 px-4 py-2 text-sm font-medium text-verdits-text shadow-sm backdrop-blur">
             <Sparkles size={16} className="text-verdits-teal" />
-            Secure legal access for modern India
+            Premium legal-tech for modern India
           </div>
           <h1 className="gradient-text text-5xl font-extrabold tracking-tight sm:text-6xl lg:text-7xl">
-            Justice, Simplified.
-            <span className="block">Legal Solutions Made Accessible.</span>
+            Justice, Simplified for Everyone.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-verdits-text sm:text-xl">
-            VERDITS is a modern legal technology platform connecting individuals, lawyers, and law
-            students through one secure digital ecosystem.
+            Verdits is an AI-powered legal platform that connects individuals with verified lawyers,
+            simplifies legal procedures, and empowers law students through internships, mentorship,
+            and legal resources.
           </p>
           <div className="mt-9 flex flex-col gap-4 sm:flex-row">
             <Link
-              to="/register"
+              to="/services"
               className="button-gradient inline-flex items-center justify-center gap-2 rounded-full px-7 py-4 text-base font-semibold"
             >
               Get Started
               <ArrowRight size={18} />
             </Link>
             <Link
-              to="/about"
-              className="inline-flex items-center justify-center rounded-full border border-sky-200 bg-white px-7 py-4 text-base font-semibold text-verdits-navy shadow-sm transition hover:border-verdits-teal/40 hover:bg-verdits-mint"
+              to="/contact"
+              className="inline-flex items-center justify-center rounded-full border border-verdits-line bg-white px-7 py-4 text-base font-semibold text-verdits-navy shadow-sm transition hover:border-verdits-teal hover:bg-verdits-mint"
             >
-              Learn More
+              Book a Consultation
             </Link>
           </div>
         </motion.div>
@@ -61,9 +57,9 @@ export default function Hero() {
               <div className="flex items-center justify-between border-b border-verdits-line pb-5">
                 <div>
                   <p className="text-sm text-verdits-text">VERDITS network</p>
-                  <p className="mt-1 text-xl font-bold text-verdits-navy">Legal matter matched</p>
+                  <p className="mt-1 text-xl font-bold text-verdits-navy">Trusted legal help in minutes</p>
                 </div>
-                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-gradient shadow-glow">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-gradient text-verdits-gold shadow-glow">
                   <Scale size={24} />
                 </div>
               </div>
@@ -86,7 +82,7 @@ export default function Hero() {
                 ))}
               </div>
 
-              <div className="mt-6 rounded-2xl bg-gradient-to-br from-verdits-mint to-sky-50 p-5">
+              <div className="mt-6 rounded-2xl bg-gradient-to-br from-verdits-mint to-white p-5">
                 <div className="flex items-center gap-3">
                   <Users className="text-verdits-teal" size={22} />
                   <p className="font-semibold">One ecosystem. Every legal role.</p>

@@ -4,19 +4,19 @@ import ServiceCard from '../components/ServiceCard.jsx';
 
 const serviceGroups = [
   {
-    title: 'For Users',
+    title: 'For Individuals',
     icon: UserRound,
-    items: ['Find Lawyers', 'Book Consultation', 'Private Communication', 'Legal Guidance'],
+    items: ['AI Legal Assistant', 'Book a Lawyer', 'Legal Consultation', 'Case Tracking'],
   },
   {
     title: 'For Lawyers',
     icon: Scale,
-    items: ['Professional Profile', 'Client Management', 'Case Tracking', 'Professional Growth'],
+    items: ['Professional Dashboard', 'Appointment Management', 'Client Management', 'Secure Communication'],
   },
   {
-    title: 'For Students',
+    title: 'For Law Students',
     icon: GraduationCap,
-    items: ['Networking', 'Learning', 'Research', 'Career Development'],
+    items: ['Internship Opportunities', 'Mentorship Programs', 'Networking', 'Learning Resources'],
   },
 ];
 
@@ -29,7 +29,7 @@ export default function Services() {
             align="left"
             eyebrow="Services"
             title="Legal access, professional growth, and student learning in one ecosystem."
-            description="VERDITS is not just a directory. It is a role-aware platform designed for the way legal needs begin, evolve, and get resolved."
+            description="Verdits brings together AI assistance, verified legal professionals, and career opportunities for students in a single modern platform."
           />
         </div>
       </section>

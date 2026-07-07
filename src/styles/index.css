@@ -19,12 +19,12 @@ html {
 body {
   margin: 0;
   min-width: 320px;
-  background: #eef6fa;
+  background: #f9f5e8;
 }
 
 ::selection {
-  background: rgba(24, 166, 125, 0.22);
-  color: #071b3d;
+  background: rgba(247, 222, 99, 0.45);
+  color: #050505;
 }
 
 .section-shell {
@@ -32,11 +32,11 @@ body {
 }
 
 .glass-panel {
-  @apply border border-verdits-line bg-white/80 shadow-2xl shadow-sky-900/10 backdrop-blur-xl;
+  @apply border border-verdits-line bg-white/85 shadow-2xl shadow-black/10 backdrop-blur-xl;
 }
 
 .premium-card {
-  @apply rounded-2xl border border-verdits-line bg-verdits-card shadow-xl shadow-sky-900/10 backdrop-blur;
+  @apply rounded-2xl border border-verdits-line bg-verdits-card shadow-xl shadow-black/10 backdrop-blur;
 }
 
 .gradient-text {
@@ -44,5 +44,5 @@ body {
 }
 
 .button-gradient {
-  @apply bg-brand-gradient text-white shadow-glow transition duration-300 hover:-translate-y-0.5 hover:scale-[1.02] hover:shadow-[0_18px_50px_rgba(7,27,61,0.22)];
+  @apply border border-verdits-gold/60 bg-brand-gradient text-verdits-gold shadow-glow transition duration-300 hover:-translate-y-0.5 hover:scale-[1.02] hover:border-verdits-gold hover:bg-verdits-navy hover:shadow-[0_18px_50px_rgba(5,5,5,0.24)];
 }

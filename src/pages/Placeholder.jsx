@@ -8,10 +8,9 @@ export default function Placeholder({ type }) {
           <p className="text-sm font-semibold uppercase tracking-[0.22em] text-verdits-teal">
             {type} placeholder
           </p>
-          <h1 className="mt-4 text-4xl font-bold">Application routing goes here.</h1>
+          <h1 className="mt-4 text-4xl font-bold">Modern authentication experience coming soon.</h1>
           <p className="mt-4 leading-8 text-verdits-text">
-            This marketing website is separate from the MERN application. The {type.toLowerCase()}{' '}
-            route is ready to be redirected to the existing app when its URL is finalized.
+            This route is ready for your future login or registration flow. For now, it keeps the brand experience polished while the product experience is prepared.
           </p>
           <Link to="/" className="button-gradient mt-7 inline-flex rounded-full px-6 py-3 font-semibold">
             Back to Home

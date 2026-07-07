@@ -4,10 +4,10 @@ import SectionTitle from '../components/SectionTitle.jsx';
 import { fadeIn, staggerContainer, viewport } from '../utils/motion.js';
 
 const values = [
-  ['Trust', ShieldCheck, 'Verified professional experiences that help people make confident legal decisions.'],
-  ['Accessibility', Users, 'Legal support should be discoverable, understandable, and available beyond traditional barriers.'],
-  ['Innovation', Lightbulb, 'Modern product thinking for legal workflows that have stayed too complex for too long.'],
-  ['Community', HeartHandshake, 'A collaborative environment for clients, lawyers, and future legal professionals.'],
+  ['Trust', ShieldCheck, 'Building confidence through verified professionals and transparent guidance.'],
+  ['Transparency', Eye, 'Clear communication without hidden complexities or confusing legal jargon.'],
+  ['Accessibility', Users, 'Making legal support available to everyone through a digital-first experience.'],
+  ['Innovation', Lightbulb, 'Transforming legal services using AI, smart workflows, and modern technology.'],
 ];
 
 export default function About() {
@@ -25,11 +25,12 @@ export default function About() {
               About VERDITS
             </p>
             <h1 className="gradient-text text-5xl font-extrabold tracking-tight sm:text-6xl">
-              A legal-tech platform built for clarity, trust, and momentum.
+              About Verdits
             </h1>
             <p className="mt-6 max-w-3xl text-lg leading-8 text-verdits-text">
-              VERDITS exists to make legal support easier to find, easier to understand, and easier
-              to act on by connecting people, lawyers, and students in one secure ecosystem.
+              Verdits is a modern legal technology platform designed to make legal services simple,
+              affordable, and accessible. We connect individuals with verified lawyers while providing
+              AI-powered legal assistance and opportunities for aspiring law students.
             </p>
           </motion.div>
         </div>
@@ -38,8 +39,8 @@ export default function About() {
       <section className="bg-verdits-section py-20 sm:py-24">
         <div className="section-shell grid gap-6 lg:grid-cols-2">
           {[
-            ['Mission', Target, 'To simplify access to trusted legal services through secure technology, thoughtful product design, and professional connection.'],
-            ['Vision', Eye, 'To become a trusted digital layer for legal discovery, collaboration, learning, and consultation across communities.'],
+            ['Mission', Target, 'To simplify legal services through technology and ensure quality legal assistance is accessible to everyone.'],
+            ['Vision', Eye, 'To become India’s most trusted legal ecosystem connecting citizens, lawyers, and future legal professionals on one digital platform.'],
           ].map(([title, Icon, copy]) => (
             <motion.article
               key={title}
@@ -49,7 +50,7 @@ export default function About() {
               viewport={viewport}
               className="premium-card p-8"
             >
-              <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-gradient shadow-glow">
+              <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-gradient text-verdits-gold shadow-glow">
                 <Icon size={25} />
               </div>
               <h2 className="mt-7 text-3xl font-bold">{title}</h2>
@@ -64,7 +65,7 @@ export default function About() {
           <SectionTitle
             eyebrow="Core values"
             title="Principles that shape the platform."
-            description="VERDITS is designed around confidence, inclusion, and a practical respect for how legal work actually happens."
+            description="Verdits is designed around confidence, inclusion, and a practical respect for how legal work actually happens."
           />
           <motion.div
             variants={staggerContainer}
